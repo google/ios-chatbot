@@ -1,0 +1,867 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		384242923EFC0FC29F5BE2D6 /* libPods-ChatBot.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C3F7B928D068570C18ACFFA1 /* libPods-ChatBot.a */; };
+		672F76BF1EC129FA00B5E350 /* CBTranslationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 672F76BE1EC129FA00B5E350 /* CBTranslationService.m */; };
+		672F76C21EC1305D00B5E350 /* CBTranslationServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 672F76C11EC1305D00B5E350 /* CBTranslationServiceTests.m */; };
+		67517E361E96F8EB00263956 /* SpeechRecognitionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 67517E351E96F8EB00263956 /* SpeechRecognitionService.m */; };
+		67B0CD791EB7A567004B75AD /* CBLandmarkDetectionService.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B0CD781EB7A567004B75AD /* CBLandmarkDetectionService.m */; };
+		67B0CD7B1EB8FC16004B75AD /* CBDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 67B0CD7A1EB8FC16004B75AD /* CBDefines.m */; };
+		6D6BE5471E848A6000A925B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE5461E848A6000A925B5 /* main.m */; };
+		6D6BE54A1E848A6000A925B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE5491E848A6000A925B5 /* AppDelegate.m */; };
+		6D6BE5521E848A6000A925B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D6BE5511E848A6000A925B5 /* Assets.xcassets */; };
+		6D6BE5551E848A6000A925B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D6BE5531E848A6000A925B5 /* LaunchScreen.storyboard */; };
+		6D6BE6931E8705E600A925B5 /* GILGridViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE64A1E8705E600A925B5 /* GILGridViewAdapter.m */; };
+		6D6BE6941E8705E600A925B5 /* GILVerticalStackViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE64D1E8705E600A925B5 /* GILVerticalStackViewAdapter.m */; };
+		6D6BE6951E8705E600A925B5 /* UIColor+GILAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6501E8705E600A925B5 /* UIColor+GILAdditions.m */; };
+		6D6BE6971E8705E600A925B5 /* GILCollectionComponentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6551E8705E600A925B5 /* GILCollectionComponentController.m */; };
+		6D6BE6991E8705E600A925B5 /* UIView+GILAutolayoutAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE65C1E8705E600A925B5 /* UIView+GILAutolayoutAdditions.m */; };
+		6D6BE69A1E8705E600A925B5 /* GILAttributedLabelComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE65F1E8705E600A925B5 /* GILAttributedLabelComponent.m */; };
+		6D6BE69B1E8705E600A925B5 /* GILAttributedLabelGroupComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6611E8705E600A925B5 /* GILAttributedLabelGroupComponent.m */; };
+		6D6BE69C1E8705E600A925B5 /* GILCarouselComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6631E8705E600A925B5 /* GILCarouselComponent.m */; };
+		6D6BE69D1E8705E600A925B5 /* GILComponentDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6661E8705E600A925B5 /* GILComponentDataSource.m */; };
+		6D6BE69E1E8705E600A925B5 /* GILComponentDataSourceSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6681E8705E600A925B5 /* GILComponentDataSourceSection.m */; };
+		6D6BE69F1E8705E600A925B5 /* GILImageCollageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE66A1E8705E600A925B5 /* GILImageCollageComponent.m */; };
+		6D6BE6A01E8705E600A925B5 /* GILImageLabelsComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE66C1E8705E600A925B5 /* GILImageLabelsComponent.m */; };
+		6D6BE6A11E8705E600A925B5 /* GILImageViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE66E1E8705E600A925B5 /* GILImageViewComponent.m */; };
+		6D6BE6A21E8705E600A925B5 /* GILViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6701E8705E600A925B5 /* GILViewComponent.m */; };
+		6D6BE6A31E8705E600A925B5 /* GILWebImageComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6731E8705E600A925B5 /* GILWebImageComponent.m */; };
+		6D6BE6A41E8705E600A925B5 /* GILCarouselView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6761E8705E600A925B5 /* GILCarouselView.m */; };
+		6D6BE6A51E8705E600A925B5 /* GILImageCollageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6781E8705E600A925B5 /* GILImageCollageView.m */; };
+		6D6BE6A61E8705E600A925B5 /* GILLabeledImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE67A1E8705E600A925B5 /* GILLabeledImageView.m */; };
+		6D6BE6A71E8705E600A925B5 /* GILMinimumTapAreaButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE67C1E8705E600A925B5 /* GILMinimumTapAreaButton.m */; };
+		6D6BE6A81E8705E600A925B5 /* GILReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE67E1E8705E600A925B5 /* GILReusableView.m */; };
+		6D6BE6A91E8705E600A925B5 /* GILTitleLabelsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6801E8705E600A925B5 /* GILTitleLabelsView.m */; };
+		6D6BE6AA1E8705E600A925B5 /* GILWebImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6821E8705E600A925B5 /* GILWebImageView.m */; };
+		6D6BE6AB1E8705E600A925B5 /* CBMessageCellComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6851E8705E600A925B5 /* CBMessageCellComponent.m */; };
+		6D6BE6AC1E8705E600A925B5 /* CBSystemMessageCellComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6871E8705E600A925B5 /* CBSystemMessageCellComponent.m */; };
+		6D6BE6AD1E8705E600A925B5 /* CBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE68A1E8705E600A925B5 /* CBViewController.m */; };
+		6D6BE6AE1E8705E600A925B5 /* CBChatBubbleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE68D1E8705E600A925B5 /* CBChatBubbleView.m */; };
+		6D6BE6AF1E8705E600A925B5 /* CBPaddingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6901E8705E600A925B5 /* CBPaddingCell.m */; };
+		6D6BE6B01E8705E600A925B5 /* CBMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6BE6921E8705E600A925B5 /* CBMessageCell.m */; };
+		6D7F436C1E9E1A12008DC8C0 /* DemoMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D7F436B1E9E1A12008DC8C0 /* DemoMapViewController.m */; };
+		6DAB2D1D1E87BFD300C953FA /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAB2D1C1E87BFD300C953FA /* DemoViewController.m */; };
+		6DBC47681E8785B900AFF80F /* CBSystemMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC47671E8785B900AFF80F /* CBSystemMessageCell.m */; };
+		6DBC476B1E8790CE00AFF80F /* GILDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC476A1E8790CE00AFF80F /* GILDefines.m */; };
+		6DBC476F1E8792D300AFF80F /* GILConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DBC476E1E8792D300AFF80F /* GILConstants.m */; };
+		6DC912101E8B6F0F003143A6 /* CBBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9120F1E8B6F0F003143A6 /* CBBubbleCell.m */; };
+		6DC912131E8B789C003143A6 /* CBImageMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912121E8B789C003143A6 /* CBImageMessageCell.m */; };
+		6DC912161E8B7EDD003143A6 /* CBImageMessageCellComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912151E8B7EDD003143A6 /* CBImageMessageCellComponent.m */; };
+		6DC912191E8BA618003143A6 /* CBLoadingIndicatorMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC912181E8BA618003143A6 /* CBLoadingIndicatorMessageCell.m */; };
+		6DC9121C1E8BA779003143A6 /* CBLoadingIndicatorMessageCellComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DC9121B1E8BA779003143A6 /* CBLoadingIndicatorMessageCellComponent.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6D6BE55C1E848A6000A925B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6D6BE53A1E848A6000A925B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D6BE5411E848A6000A925B5;
+			remoteInfo = ChatBot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3C7E4C598C547345DD5DE1A5 /* Pods-ChatBot.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBot.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatBot/Pods-ChatBot.release.xcconfig"; sourceTree = "<group>"; };
+		672F76BD1EC129FA00B5E350 /* CBTranslationService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBTranslationService.h; sourceTree = "<group>"; };
+		672F76BE1EC129FA00B5E350 /* CBTranslationService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTranslationService.m; sourceTree = "<group>"; };
+		672F76C11EC1305D00B5E350 /* CBTranslationServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBTranslationServiceTests.m; sourceTree = "<group>"; };
+		67517E341E96F8EB00263956 /* SpeechRecognitionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechRecognitionService.h; sourceTree = "<group>"; };
+		67517E351E96F8EB00263956 /* SpeechRecognitionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechRecognitionService.m; sourceTree = "<group>"; };
+		67B0CD771EB7A567004B75AD /* CBLandmarkDetectionService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLandmarkDetectionService.h; sourceTree = "<group>"; };
+		67B0CD781EB7A567004B75AD /* CBLandmarkDetectionService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLandmarkDetectionService.m; sourceTree = "<group>"; };
+		67B0CD7A1EB8FC16004B75AD /* CBDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDefines.m; sourceTree = "<group>"; };
+		6D6BE5421E848A6000A925B5 /* ChatBot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChatBot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6BE5461E848A6000A925B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6D6BE5481E848A6000A925B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6D6BE5491E848A6000A925B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6D6BE5511E848A6000A925B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6D6BE5541E848A6000A925B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6D6BE5561E848A6000A925B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D6BE55B1E848A6000A925B5 /* ChatBotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatBotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D6BE6461E8705E600A925B5 /* CBDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDefines.h; sourceTree = "<group>"; };
+		6D6BE6491E8705E600A925B5 /* GILGridViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILGridViewAdapter.h; sourceTree = "<group>"; };
+		6D6BE64A1E8705E600A925B5 /* GILGridViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILGridViewAdapter.m; sourceTree = "<group>"; };
+		6D6BE64B1E8705E600A925B5 /* GILReusableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILReusableViewAdapter.h; sourceTree = "<group>"; };
+		6D6BE64C1E8705E600A925B5 /* GILVerticalStackViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILVerticalStackViewAdapter.h; sourceTree = "<group>"; };
+		6D6BE64D1E8705E600A925B5 /* GILVerticalStackViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILVerticalStackViewAdapter.m; sourceTree = "<group>"; };
+		6D6BE64F1E8705E600A925B5 /* UIColor+GILAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+GILAdditions.h"; sourceTree = "<group>"; };
+		6D6BE6501E8705E600A925B5 /* UIColor+GILAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+GILAdditions.m"; sourceTree = "<group>"; };
+		6D6BE6541E8705E600A925B5 /* GILCollectionComponentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILCollectionComponentController.h; sourceTree = "<group>"; };
+		6D6BE6551E8705E600A925B5 /* GILCollectionComponentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILCollectionComponentController.m; sourceTree = "<group>"; };
+		6D6BE6561E8705E600A925B5 /* GILFlowCollectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILFlowCollectionController.h; sourceTree = "<group>"; };
+		6D6BE65B1E8705E600A925B5 /* UIView+GILAutolayoutAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GILAutolayoutAdditions.h"; sourceTree = "<group>"; };
+		6D6BE65C1E8705E600A925B5 /* UIView+GILAutolayoutAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GILAutolayoutAdditions.m"; sourceTree = "<group>"; };
+		6D6BE65E1E8705E600A925B5 /* GILAttributedLabelComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILAttributedLabelComponent.h; sourceTree = "<group>"; };
+		6D6BE65F1E8705E600A925B5 /* GILAttributedLabelComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILAttributedLabelComponent.m; sourceTree = "<group>"; };
+		6D6BE6601E8705E600A925B5 /* GILAttributedLabelGroupComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILAttributedLabelGroupComponent.h; sourceTree = "<group>"; };
+		6D6BE6611E8705E600A925B5 /* GILAttributedLabelGroupComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILAttributedLabelGroupComponent.m; sourceTree = "<group>"; };
+		6D6BE6621E8705E600A925B5 /* GILCarouselComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILCarouselComponent.h; sourceTree = "<group>"; };
+		6D6BE6631E8705E600A925B5 /* GILCarouselComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILCarouselComponent.m; sourceTree = "<group>"; };
+		6D6BE6641E8705E600A925B5 /* GILCellViewComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILCellViewComponent.h; sourceTree = "<group>"; };
+		6D6BE6651E8705E600A925B5 /* GILComponentDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILComponentDataSource.h; sourceTree = "<group>"; };
+		6D6BE6661E8705E600A925B5 /* GILComponentDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILComponentDataSource.m; sourceTree = "<group>"; };
+		6D6BE6671E8705E600A925B5 /* GILComponentDataSourceSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILComponentDataSourceSection.h; sourceTree = "<group>"; };
+		6D6BE6681E8705E600A925B5 /* GILComponentDataSourceSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILComponentDataSourceSection.m; sourceTree = "<group>"; };
+		6D6BE6691E8705E600A925B5 /* GILImageCollageComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILImageCollageComponent.h; sourceTree = "<group>"; };
+		6D6BE66A1E8705E600A925B5 /* GILImageCollageComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILImageCollageComponent.m; sourceTree = "<group>"; };
+		6D6BE66B1E8705E600A925B5 /* GILImageLabelsComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILImageLabelsComponent.h; sourceTree = "<group>"; };
+		6D6BE66C1E8705E600A925B5 /* GILImageLabelsComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILImageLabelsComponent.m; sourceTree = "<group>"; };
+		6D6BE66D1E8705E600A925B5 /* GILImageViewComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILImageViewComponent.h; sourceTree = "<group>"; };
+		6D6BE66E1E8705E600A925B5 /* GILImageViewComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILImageViewComponent.m; sourceTree = "<group>"; };
+		6D6BE66F1E8705E600A925B5 /* GILViewComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILViewComponent.h; sourceTree = "<group>"; };
+		6D6BE6701E8705E600A925B5 /* GILViewComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILViewComponent.m; sourceTree = "<group>"; };
+		6D6BE6711E8705E600A925B5 /* GILViewComponentConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILViewComponentConstants.h; sourceTree = "<group>"; };
+		6D6BE6721E8705E600A925B5 /* GILWebImageComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILWebImageComponent.h; sourceTree = "<group>"; };
+		6D6BE6731E8705E600A925B5 /* GILWebImageComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILWebImageComponent.m; sourceTree = "<group>"; };
+		6D6BE6751E8705E600A925B5 /* GILCarouselView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILCarouselView.h; sourceTree = "<group>"; };
+		6D6BE6761E8705E600A925B5 /* GILCarouselView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILCarouselView.m; sourceTree = "<group>"; };
+		6D6BE6771E8705E600A925B5 /* GILImageCollageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILImageCollageView.h; sourceTree = "<group>"; };
+		6D6BE6781E8705E600A925B5 /* GILImageCollageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILImageCollageView.m; sourceTree = "<group>"; };
+		6D6BE6791E8705E600A925B5 /* GILLabeledImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILLabeledImageView.h; sourceTree = "<group>"; };
+		6D6BE67A1E8705E600A925B5 /* GILLabeledImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILLabeledImageView.m; sourceTree = "<group>"; };
+		6D6BE67B1E8705E600A925B5 /* GILMinimumTapAreaButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILMinimumTapAreaButton.h; sourceTree = "<group>"; };
+		6D6BE67C1E8705E600A925B5 /* GILMinimumTapAreaButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILMinimumTapAreaButton.m; sourceTree = "<group>"; };
+		6D6BE67D1E8705E600A925B5 /* GILReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILReusableView.h; sourceTree = "<group>"; };
+		6D6BE67E1E8705E600A925B5 /* GILReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILReusableView.m; sourceTree = "<group>"; };
+		6D6BE67F1E8705E600A925B5 /* GILTitleLabelsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILTitleLabelsView.h; sourceTree = "<group>"; };
+		6D6BE6801E8705E600A925B5 /* GILTitleLabelsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILTitleLabelsView.m; sourceTree = "<group>"; };
+		6D6BE6811E8705E600A925B5 /* GILWebImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILWebImageView.h; sourceTree = "<group>"; };
+		6D6BE6821E8705E600A925B5 /* GILWebImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILWebImageView.m; sourceTree = "<group>"; };
+		6D6BE6841E8705E600A925B5 /* CBMessageCellComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMessageCellComponent.h; sourceTree = "<group>"; };
+		6D6BE6851E8705E600A925B5 /* CBMessageCellComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMessageCellComponent.m; sourceTree = "<group>"; };
+		6D6BE6861E8705E600A925B5 /* CBSystemMessageCellComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSystemMessageCellComponent.h; sourceTree = "<group>"; };
+		6D6BE6871E8705E600A925B5 /* CBSystemMessageCellComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSystemMessageCellComponent.m; sourceTree = "<group>"; };
+		6D6BE6891E8705E600A925B5 /* CBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBViewController.h; sourceTree = "<group>"; };
+		6D6BE68A1E8705E600A925B5 /* CBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBViewController.m; sourceTree = "<group>"; };
+		6D6BE68C1E8705E600A925B5 /* CBChatBubbleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBChatBubbleView.h; sourceTree = "<group>"; };
+		6D6BE68D1E8705E600A925B5 /* CBChatBubbleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBChatBubbleView.m; sourceTree = "<group>"; };
+		6D6BE68F1E8705E600A925B5 /* CBPaddingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBPaddingCell.h; sourceTree = "<group>"; };
+		6D6BE6901E8705E600A925B5 /* CBPaddingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBPaddingCell.m; sourceTree = "<group>"; };
+		6D6BE6911E8705E600A925B5 /* CBMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBMessageCell.h; sourceTree = "<group>"; };
+		6D6BE6921E8705E600A925B5 /* CBMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBMessageCell.m; sourceTree = "<group>"; };
+		6D7F436A1E9E1A12008DC8C0 /* DemoMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMapViewController.h; sourceTree = "<group>"; };
+		6D7F436B1E9E1A12008DC8C0 /* DemoMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMapViewController.m; sourceTree = "<group>"; };
+		6DAB2D191E87BD7B00C953FA /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		6DAB2D1B1E87BFD300C953FA /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		6DAB2D1C1E87BFD300C953FA /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		6DBC47661E8785B900AFF80F /* CBSystemMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBSystemMessageCell.h; sourceTree = "<group>"; };
+		6DBC47671E8785B900AFF80F /* CBSystemMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBSystemMessageCell.m; sourceTree = "<group>"; };
+		6DBC476A1E8790CE00AFF80F /* GILDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILDefines.m; sourceTree = "<group>"; };
+		6DBC476C1E8790DC00AFF80F /* GILDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GILDefines.h; sourceTree = "<group>"; };
+		6DBC476D1E8792D300AFF80F /* GILConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GILConstants.h; sourceTree = "<group>"; };
+		6DBC476E1E8792D300AFF80F /* GILConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GILConstants.m; sourceTree = "<group>"; };
+		6DC9120E1E8B6F0F003143A6 /* CBBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBubbleCell.h; sourceTree = "<group>"; };
+		6DC9120F1E8B6F0F003143A6 /* CBBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBubbleCell.m; sourceTree = "<group>"; };
+		6DC912111E8B789C003143A6 /* CBImageMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBImageMessageCell.h; sourceTree = "<group>"; };
+		6DC912121E8B789C003143A6 /* CBImageMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBImageMessageCell.m; sourceTree = "<group>"; };
+		6DC912141E8B7EDD003143A6 /* CBImageMessageCellComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBImageMessageCellComponent.h; sourceTree = "<group>"; };
+		6DC912151E8B7EDD003143A6 /* CBImageMessageCellComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBImageMessageCellComponent.m; sourceTree = "<group>"; };
+		6DC912171E8BA618003143A6 /* CBLoadingIndicatorMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLoadingIndicatorMessageCell.h; sourceTree = "<group>"; };
+		6DC912181E8BA618003143A6 /* CBLoadingIndicatorMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLoadingIndicatorMessageCell.m; sourceTree = "<group>"; };
+		6DC9121A1E8BA779003143A6 /* CBLoadingIndicatorMessageCellComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBLoadingIndicatorMessageCellComponent.h; sourceTree = "<group>"; };
+		6DC9121B1E8BA779003143A6 /* CBLoadingIndicatorMessageCellComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBLoadingIndicatorMessageCellComponent.m; sourceTree = "<group>"; };
+		C3F7B928D068570C18ACFFA1 /* libPods-ChatBot.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ChatBot.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAC5F785EA4E74553C858098 /* Pods-ChatBot.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatBot.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatBot/Pods-ChatBot.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6D6BE53F1E848A6000A925B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384242923EFC0FC29F5BE2D6 /* libPods-ChatBot.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D6BE5581E848A6000A925B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		672F76C01EC1305D00B5E350 /* ChatBotTests */ = {
+			isa = PBXGroup;
+			children = (
+				672F76C11EC1305D00B5E350 /* CBTranslationServiceTests.m */,
+			);
+			path = ChatBotTests;
+			sourceTree = "<group>";
+		};
+		6D6BE5391E848A6000A925B5 = {
+			isa = PBXGroup;
+			children = (
+				672F76C01EC1305D00B5E350 /* ChatBotTests */,
+				6D6BE5441E848A6000A925B5 /* ChatBot */,
+				6D6BE5431E848A6000A925B5 /* Products */,
+				6DAB2D181E87BD7A00C953FA /* Frameworks */,
+				7D8D4032E18195460CFA69A0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		6D6BE5431E848A6000A925B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE5421E848A6000A925B5 /* ChatBot.app */,
+				6D6BE55B1E848A6000A925B5 /* ChatBotTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6D6BE5441E848A6000A925B5 /* ChatBot */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE6441E8705E600A925B5 /* ChatBot */,
+				6D6BE5481E848A6000A925B5 /* AppDelegate.h */,
+				6D6BE5491E848A6000A925B5 /* AppDelegate.m */,
+				6DAB2D1B1E87BFD300C953FA /* DemoViewController.h */,
+				6DAB2D1C1E87BFD300C953FA /* DemoViewController.m */,
+				6D6BE5511E848A6000A925B5 /* Assets.xcassets */,
+				6D6BE5531E848A6000A925B5 /* LaunchScreen.storyboard */,
+				6D6BE5561E848A6000A925B5 /* Info.plist */,
+				6D6BE5451E848A6000A925B5 /* Supporting Files */,
+				6D7F436A1E9E1A12008DC8C0 /* DemoMapViewController.h */,
+				6D7F436B1E9E1A12008DC8C0 /* DemoMapViewController.m */,
+			);
+			path = ChatBot;
+			sourceTree = "<group>";
+		};
+		6D6BE5451E848A6000A925B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE5461E848A6000A925B5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6D6BE6441E8705E600A925B5 /* ChatBot */ = {
+			isa = PBXGroup;
+			children = (
+				672F76BD1EC129FA00B5E350 /* CBTranslationService.h */,
+				672F76BE1EC129FA00B5E350 /* CBTranslationService.m */,
+				67517E341E96F8EB00263956 /* SpeechRecognitionService.h */,
+				67517E351E96F8EB00263956 /* SpeechRecognitionService.m */,
+				67B0CD771EB7A567004B75AD /* CBLandmarkDetectionService.h */,
+				67B0CD781EB7A567004B75AD /* CBLandmarkDetectionService.m */,
+				6D6BE6451E8705E600A925B5 /* Helpers */,
+				6D6BE6471E8705E600A925B5 /* Infrastructure */,
+				6D6BE6831E8705E600A925B5 /* ViewComponents */,
+				6D6BE6881E8705E600A925B5 /* ViewControllers */,
+				6D6BE68B1E8705E600A925B5 /* Views */,
+			);
+			path = ChatBot;
+			sourceTree = "<group>";
+		};
+		6D6BE6451E8705E600A925B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE6461E8705E600A925B5 /* CBDefines.h */,
+				67B0CD7A1EB8FC16004B75AD /* CBDefines.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6D6BE6471E8705E600A925B5 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE6481E8705E600A925B5 /* Adapters */,
+				6D6BE64E1E8705E600A925B5 /* Categories */,
+				6D6BE6531E8705E600A925B5 /* Controllers */,
+				6D6BE6571E8705E600A925B5 /* Helpers */,
+				6D6BE65D1E8705E600A925B5 /* ViewComponents */,
+				6D6BE6741E8705E600A925B5 /* Views */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		6D6BE6481E8705E600A925B5 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE6491E8705E600A925B5 /* GILGridViewAdapter.h */,
+				6D6BE64A1E8705E600A925B5 /* GILGridViewAdapter.m */,
+				6D6BE64B1E8705E600A925B5 /* GILReusableViewAdapter.h */,
+				6D6BE64C1E8705E600A925B5 /* GILVerticalStackViewAdapter.h */,
+				6D6BE64D1E8705E600A925B5 /* GILVerticalStackViewAdapter.m */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		6D6BE64E1E8705E600A925B5 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE64F1E8705E600A925B5 /* UIColor+GILAdditions.h */,
+				6D6BE6501E8705E600A925B5 /* UIColor+GILAdditions.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		6D6BE6531E8705E600A925B5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE6541E8705E600A925B5 /* GILCollectionComponentController.h */,
+				6D6BE6551E8705E600A925B5 /* GILCollectionComponentController.m */,
+				6D6BE6561E8705E600A925B5 /* GILFlowCollectionController.h */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		6D6BE6571E8705E600A925B5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6DBC476D1E8792D300AFF80F /* GILConstants.h */,
+				6DBC476E1E8792D300AFF80F /* GILConstants.m */,
+				6DBC476C1E8790DC00AFF80F /* GILDefines.h */,
+				6DBC476A1E8790CE00AFF80F /* GILDefines.m */,
+				6D6BE65B1E8705E600A925B5 /* UIView+GILAutolayoutAdditions.h */,
+				6D6BE65C1E8705E600A925B5 /* UIView+GILAutolayoutAdditions.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6D6BE65D1E8705E600A925B5 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE65E1E8705E600A925B5 /* GILAttributedLabelComponent.h */,
+				6D6BE65F1E8705E600A925B5 /* GILAttributedLabelComponent.m */,
+				6D6BE6601E8705E600A925B5 /* GILAttributedLabelGroupComponent.h */,
+				6D6BE6611E8705E600A925B5 /* GILAttributedLabelGroupComponent.m */,
+				6D6BE6621E8705E600A925B5 /* GILCarouselComponent.h */,
+				6D6BE6631E8705E600A925B5 /* GILCarouselComponent.m */,
+				6D6BE6641E8705E600A925B5 /* GILCellViewComponent.h */,
+				6D6BE6651E8705E600A925B5 /* GILComponentDataSource.h */,
+				6D6BE6661E8705E600A925B5 /* GILComponentDataSource.m */,
+				6D6BE6671E8705E600A925B5 /* GILComponentDataSourceSection.h */,
+				6D6BE6681E8705E600A925B5 /* GILComponentDataSourceSection.m */,
+				6D6BE6691E8705E600A925B5 /* GILImageCollageComponent.h */,
+				6D6BE66A1E8705E600A925B5 /* GILImageCollageComponent.m */,
+				6D6BE66B1E8705E600A925B5 /* GILImageLabelsComponent.h */,
+				6D6BE66C1E8705E600A925B5 /* GILImageLabelsComponent.m */,
+				6D6BE66D1E8705E600A925B5 /* GILImageViewComponent.h */,
+				6D6BE66E1E8705E600A925B5 /* GILImageViewComponent.m */,
+				6D6BE66F1E8705E600A925B5 /* GILViewComponent.h */,
+				6D6BE6701E8705E600A925B5 /* GILViewComponent.m */,
+				6D6BE6711E8705E600A925B5 /* GILViewComponentConstants.h */,
+				6D6BE6721E8705E600A925B5 /* GILWebImageComponent.h */,
+				6D6BE6731E8705E600A925B5 /* GILWebImageComponent.m */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		6D6BE6741E8705E600A925B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE6751E8705E600A925B5 /* GILCarouselView.h */,
+				6D6BE6761E8705E600A925B5 /* GILCarouselView.m */,
+				6D6BE6771E8705E600A925B5 /* GILImageCollageView.h */,
+				6D6BE6781E8705E600A925B5 /* GILImageCollageView.m */,
+				6D6BE6791E8705E600A925B5 /* GILLabeledImageView.h */,
+				6D6BE67A1E8705E600A925B5 /* GILLabeledImageView.m */,
+				6D6BE67B1E8705E600A925B5 /* GILMinimumTapAreaButton.h */,
+				6D6BE67C1E8705E600A925B5 /* GILMinimumTapAreaButton.m */,
+				6D6BE67D1E8705E600A925B5 /* GILReusableView.h */,
+				6D6BE67E1E8705E600A925B5 /* GILReusableView.m */,
+				6D6BE67F1E8705E600A925B5 /* GILTitleLabelsView.h */,
+				6D6BE6801E8705E600A925B5 /* GILTitleLabelsView.m */,
+				6D6BE6811E8705E600A925B5 /* GILWebImageView.h */,
+				6D6BE6821E8705E600A925B5 /* GILWebImageView.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D6BE6831E8705E600A925B5 /* ViewComponents */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE6841E8705E600A925B5 /* CBMessageCellComponent.h */,
+				6D6BE6851E8705E600A925B5 /* CBMessageCellComponent.m */,
+				6D6BE6861E8705E600A925B5 /* CBSystemMessageCellComponent.h */,
+				6D6BE6871E8705E600A925B5 /* CBSystemMessageCellComponent.m */,
+				6DC912141E8B7EDD003143A6 /* CBImageMessageCellComponent.h */,
+				6DC912151E8B7EDD003143A6 /* CBImageMessageCellComponent.m */,
+				6DC9121A1E8BA779003143A6 /* CBLoadingIndicatorMessageCellComponent.h */,
+				6DC9121B1E8BA779003143A6 /* CBLoadingIndicatorMessageCellComponent.m */,
+			);
+			path = ViewComponents;
+			sourceTree = "<group>";
+		};
+		6D6BE6881E8705E600A925B5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE6891E8705E600A925B5 /* CBViewController.h */,
+				6D6BE68A1E8705E600A925B5 /* CBViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		6D6BE68B1E8705E600A925B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE68C1E8705E600A925B5 /* CBChatBubbleView.h */,
+				6D6BE68D1E8705E600A925B5 /* CBChatBubbleView.m */,
+				6D6BE68E1E8705E600A925B5 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6D6BE68E1E8705E600A925B5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6D6BE68F1E8705E600A925B5 /* CBPaddingCell.h */,
+				6D6BE6901E8705E600A925B5 /* CBPaddingCell.m */,
+				6D6BE6911E8705E600A925B5 /* CBMessageCell.h */,
+				6D6BE6921E8705E600A925B5 /* CBMessageCell.m */,
+				6DBC47661E8785B900AFF80F /* CBSystemMessageCell.h */,
+				6DBC47671E8785B900AFF80F /* CBSystemMessageCell.m */,
+				6DC9120E1E8B6F0F003143A6 /* CBBubbleCell.h */,
+				6DC9120F1E8B6F0F003143A6 /* CBBubbleCell.m */,
+				6DC912111E8B789C003143A6 /* CBImageMessageCell.h */,
+				6DC912121E8B789C003143A6 /* CBImageMessageCell.m */,
+				6DC912171E8BA618003143A6 /* CBLoadingIndicatorMessageCell.h */,
+				6DC912181E8BA618003143A6 /* CBLoadingIndicatorMessageCell.m */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		6DAB2D181E87BD7A00C953FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DAB2D191E87BD7B00C953FA /* SafariServices.framework */,
+				C3F7B928D068570C18ACFFA1 /* libPods-ChatBot.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7D8D4032E18195460CFA69A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CAC5F785EA4E74553C858098 /* Pods-ChatBot.debug.xcconfig */,
+				3C7E4C598C547345DD5DE1A5 /* Pods-ChatBot.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6D6BE5411E848A6000A925B5 /* ChatBot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D6BE56F1E848A6000A925B5 /* Build configuration list for PBXNativeTarget "ChatBot" */;
+			buildPhases = (
+				22DA97FA43D0DEA482254C43 /* [CP] Check Pods Manifest.lock */,
+				6D6BE53E1E848A6000A925B5 /* Sources */,
+				6D6BE53F1E848A6000A925B5 /* Frameworks */,
+				6D6BE5401E848A6000A925B5 /* Resources */,
+				4541F6DDC47DD827AFC47BBA /* [CP] Embed Pods Frameworks */,
+				AC162F626F9C5BC2676125CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChatBot;
+			productName = ChatBot;
+			productReference = 6D6BE5421E848A6000A925B5 /* ChatBot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6D6BE55A1E848A6000A925B5 /* ChatBotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D6BE5721E848A6000A925B5 /* Build configuration list for PBXNativeTarget "ChatBotTests" */;
+			buildPhases = (
+				6D6BE5571E848A6000A925B5 /* Sources */,
+				6D6BE5581E848A6000A925B5 /* Frameworks */,
+				6D6BE5591E848A6000A925B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D6BE55D1E848A6000A925B5 /* PBXTargetDependency */,
+			);
+			name = ChatBotTests;
+			productName = ChatBotTests;
+			productReference = 6D6BE55B1E848A6000A925B5 /* ChatBotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6D6BE53A1E848A6000A925B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Google;
+				TargetAttributes = {
+					6D6BE5411E848A6000A925B5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = EQHXZ8M8AV;
+						ProvisioningStyle = Automatic;
+					};
+					6D6BE55A1E848A6000A925B5 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6D6BE5411E848A6000A925B5;
+					};
+				};
+			};
+			buildConfigurationList = 6D6BE53D1E848A6000A925B5 /* Build configuration list for PBXProject "ChatBot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6D6BE5391E848A6000A925B5;
+			productRefGroup = 6D6BE5431E848A6000A925B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6D6BE5411E848A6000A925B5 /* ChatBot */,
+				6D6BE55A1E848A6000A925B5 /* ChatBotTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6D6BE5401E848A6000A925B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D6BE5551E848A6000A925B5 /* LaunchScreen.storyboard in Resources */,
+				6D6BE5521E848A6000A925B5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D6BE5591E848A6000A925B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22DA97FA43D0DEA482254C43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4541F6DDC47DD827AFC47BBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatBot/Pods-ChatBot-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC162F626F9C5BC2676125CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ChatBot/Pods-ChatBot-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6D6BE53E1E848A6000A925B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DC912131E8B789C003143A6 /* CBImageMessageCell.m in Sources */,
+				6D6BE6941E8705E600A925B5 /* GILVerticalStackViewAdapter.m in Sources */,
+				6D6BE6A41E8705E600A925B5 /* GILCarouselView.m in Sources */,
+				6D6BE69B1E8705E600A925B5 /* GILAttributedLabelGroupComponent.m in Sources */,
+				6DAB2D1D1E87BFD300C953FA /* DemoViewController.m in Sources */,
+				6D6BE6AE1E8705E600A925B5 /* CBChatBubbleView.m in Sources */,
+				6D6BE6AC1E8705E600A925B5 /* CBSystemMessageCellComponent.m in Sources */,
+				6D6BE6A11E8705E600A925B5 /* GILImageViewComponent.m in Sources */,
+				6D6BE6991E8705E600A925B5 /* UIView+GILAutolayoutAdditions.m in Sources */,
+				6D6BE6931E8705E600A925B5 /* GILGridViewAdapter.m in Sources */,
+				672F76BF1EC129FA00B5E350 /* CBTranslationService.m in Sources */,
+				6D6BE6AD1E8705E600A925B5 /* CBViewController.m in Sources */,
+				6D6BE6A81E8705E600A925B5 /* GILReusableView.m in Sources */,
+				6D6BE6A21E8705E600A925B5 /* GILViewComponent.m in Sources */,
+				6DC912191E8BA618003143A6 /* CBLoadingIndicatorMessageCell.m in Sources */,
+				6D6BE69A1E8705E600A925B5 /* GILAttributedLabelComponent.m in Sources */,
+				6DC9121C1E8BA779003143A6 /* CBLoadingIndicatorMessageCellComponent.m in Sources */,
+				6D6BE6AA1E8705E600A925B5 /* GILWebImageView.m in Sources */,
+				67B0CD791EB7A567004B75AD /* CBLandmarkDetectionService.m in Sources */,
+				6D6BE69F1E8705E600A925B5 /* GILImageCollageComponent.m in Sources */,
+				6D7F436C1E9E1A12008DC8C0 /* DemoMapViewController.m in Sources */,
+				6D6BE6A31E8705E600A925B5 /* GILWebImageComponent.m in Sources */,
+				6D6BE6A91E8705E600A925B5 /* GILTitleLabelsView.m in Sources */,
+				6D6BE6A51E8705E600A925B5 /* GILImageCollageView.m in Sources */,
+				6D6BE69C1E8705E600A925B5 /* GILCarouselComponent.m in Sources */,
+				6D6BE69E1E8705E600A925B5 /* GILComponentDataSourceSection.m in Sources */,
+				67517E361E96F8EB00263956 /* SpeechRecognitionService.m in Sources */,
+				6DBC476B1E8790CE00AFF80F /* GILDefines.m in Sources */,
+				6D6BE6B01E8705E600A925B5 /* CBMessageCell.m in Sources */,
+				6D6BE6A01E8705E600A925B5 /* GILImageLabelsComponent.m in Sources */,
+				6D6BE6AB1E8705E600A925B5 /* CBMessageCellComponent.m in Sources */,
+				6D6BE6A61E8705E600A925B5 /* GILLabeledImageView.m in Sources */,
+				6D6BE6951E8705E600A925B5 /* UIColor+GILAdditions.m in Sources */,
+				6DC912161E8B7EDD003143A6 /* CBImageMessageCellComponent.m in Sources */,
+				6D6BE6971E8705E600A925B5 /* GILCollectionComponentController.m in Sources */,
+				6D6BE69D1E8705E600A925B5 /* GILComponentDataSource.m in Sources */,
+				6D6BE6A71E8705E600A925B5 /* GILMinimumTapAreaButton.m in Sources */,
+				6DC912101E8B6F0F003143A6 /* CBBubbleCell.m in Sources */,
+				6D6BE6AF1E8705E600A925B5 /* CBPaddingCell.m in Sources */,
+				6D6BE54A1E848A6000A925B5 /* AppDelegate.m in Sources */,
+				6D6BE5471E848A6000A925B5 /* main.m in Sources */,
+				6DBC476F1E8792D300AFF80F /* GILConstants.m in Sources */,
+				67B0CD7B1EB8FC16004B75AD /* CBDefines.m in Sources */,
+				6DBC47681E8785B900AFF80F /* CBSystemMessageCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D6BE5571E848A6000A925B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				672F76C21EC1305D00B5E350 /* CBTranslationServiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6D6BE55D1E848A6000A925B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6D6BE5411E848A6000A925B5 /* ChatBot */;
+			targetProxy = 6D6BE55C1E848A6000A925B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6D6BE5531E848A6000A925B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6D6BE5541E848A6000A925B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6D6BE56D1E848A6000A925B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6D6BE56E1E848A6000A925B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_IMPLICIT_SIGN_CONVERSION = NO;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_IMPLICIT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_SHADOW = YES;
+				GCC_WARN_SIGN_COMPARE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6D6BE5701E848A6000A925B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAC5F785EA4E74553C858098 /* Pods-ChatBot.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EQHXZ8M8AV;
+				INFOPLIST_FILE = ChatBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.local.ChatBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6D6BE5711E848A6000A925B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C7E4C598C547345DD5DE1A5 /* Pods-ChatBot.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = EQHXZ8M8AV;
+				INFOPLIST_FILE = ChatBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.local.ChatBot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6D6BE5731E848A6000A925B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChatBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.local.ChatBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatBot.app/ChatBot";
+			};
+			name = Debug;
+		};
+		6D6BE5741E848A6000A925B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ChatBot/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.google.local.ChatBotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChatBot.app/ChatBot";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6D6BE53D1E848A6000A925B5 /* Build configuration list for PBXProject "ChatBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D6BE56D1E848A6000A925B5 /* Debug */,
+				6D6BE56E1E848A6000A925B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D6BE56F1E848A6000A925B5 /* Build configuration list for PBXNativeTarget "ChatBot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D6BE5701E848A6000A925B5 /* Debug */,
+				6D6BE5711E848A6000A925B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6D6BE5721E848A6000A925B5 /* Build configuration list for PBXNativeTarget "ChatBotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D6BE5731E848A6000A925B5 /* Debug */,
+				6D6BE5741E848A6000A925B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6D6BE53A1E848A6000A925B5 /* Project object */;
+}

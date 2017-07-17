@@ -1,0 +1,142 @@
+/*
+ *
+ * Copyright 2017, Google Inc.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are
+ * met:
+ *
+ *     * Redistributions of source code must retain the above copyright
+ * notice, this list of conditions and the following disclaimer.
+ *     * Redistributions in binary form must reproduce the above
+ * copyright notice, this list of conditions and the following disclaimer
+ * in the documentation and/or other materials provided with the
+ * distribution.
+ *     * Neither the name of Google Inc. nor the names of its
+ * contributors may be used to endorse or promote products derived from
+ * this software without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ * "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ * A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+ * OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+ * LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ * DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ * THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+ * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#import "CBBubbleCell.h"
+
+#import "CBChatBubbleView.h"
+
+static const CGFloat kActionButtonSpacing = 16.0f;
+static const CGSize kActionButtonSize = {56.0f, 56.0f};
+
+@implementation CBBubbleCell
+
+- (instancetype)initWithFrame:(CGRect)frame {
+  self = [super initWithFrame:frame];
+  [self CBBubbleCell_init];
+  return self;
+}
+
+- (instancetype)initWithCode:(NSCoder *)aCoder {
+  self = [super initWithCoder:aCoder];
+  [self CBBubbleCell_init];
+  return self;
+}
+
+- (void)CBBubbleCell_init {
+  _messageBubbleView = [[CBChatBubbleView alloc] initWithFrame:self.contentView.bounds];
+  [self.contentView addSubview:_messageBubbleView];
+
+  _actionButton = [UIButton buttonWithType:UIButtonTypeSystem];
+  _actionButton.backgroundColor = [UIColor whiteColor];
+  _actionButton.layer.cornerRadius = kActionButtonSize.width / 2.0f;
+  _actionButton.layer.shadowColor = [UIColor blackColor].CGColor;
+  _actionButton.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
+  _actionButton.layer.shadowOpacity = 0.5f;
+  _actionButton.layer.shadowRadius = 2.0f;
+  [_actionButton addTarget:self action:@selector(didTapActionButton:) forControlEvents:UIControlEventTouchUpInside];
+  _actionButton.hidden = YES;
+  [self.contentView addSubview:_actionButton];
+
+  self.contentView.layer.shadowColor = [UIColor blackColor].CGColor;
+  self.contentView.layer.shadowRadius = 2.0f;
+  self.contentView.layer.shadowOffset = CGSizeMake(2.0f, 2.0f);
+  self.contentView.layer.shadowOpacity = 0.3f;
+}
+
+- (void)layoutSubviews {
+  [super layoutSubviews];
+  CGRect bubbleLayoutFrame = self.contentView.bounds;
+  bubbleLayoutFrame.size.width *= _maxBubbleWidthPercentage;
+  CGRect bubbleFrame = UIEdgeInsetsInsetRect(bubbleLayoutFrame, _padding);
+  CGSize chatBubbleSize = [_messageBubbleView sizeThatFits:bubbleFrame.size];
+  bubbleFrame.size = chatBubbleSize;
+
+  CGFloat actionButtonX = CGRectGetMaxX(bubbleFrame) + kActionButtonSpacing;
+  if (_arrowPosition == CBChatBubbleArrowPositionRight) {
+    bubbleFrame.origin.x += CGRectGetWidth(self.contentView.bounds) - chatBubbleSize.width -
+                            _padding.left - _padding.right;
+    actionButtonX = CGRectGetMinX(bubbleFrame) - kActionButtonSpacing - kActionButtonSize.width;
+  }
+  CGFloat actionButtonY = CGRectGetMinY(bubbleFrame) +
+      (CGRectGetHeight(bubbleFrame) - kActionButtonSize.height) / 2.0f;
+
+  bubbleFrame = CGRectIntegral(bubbleFrame);
+  _messageBubbleView.frame = bubbleFrame;
+
+  CGRect actionButtonFrame = CGRectMake(actionButtonX, actionButtonY, kActionButtonSize.width,
+                                        kActionButtonSize.height);
+  actionButtonFrame = CGRectIntegral(actionButtonFrame);
+  _actionButton.frame = actionButtonFrame;
+
+  self.contentView.layer.shadowPath = CBChatBubblePath(bubbleFrame, _arrowPosition, NO).CGPath;
+}
+
+- (CGSize)sizeThatFits:(CGSize)size {
+  CGFloat layoutWidth = (size.width * _maxBubbleWidthPercentage) - _padding.left - _padding.right;
+  CGSize chatBubbleSize = [_messageBubbleView sizeThatFits:CGSizeMake(layoutWidth, CGFLOAT_MAX)];
+  CGFloat height = chatBubbleSize.height + _padding.top + _padding.bottom;
+  return CGSizeMake(size.width, height);
+}
+
+- (void)setBubbleColor:(UIColor *)bubbleColor {
+  _bubbleColor = bubbleColor;
+  _messageBubbleView.backgroundColor = bubbleColor;
+}
+
+- (void)setArrowPosition:(CBChatBubbleArrowPosition)arrowPosition {
+  if (_arrowPosition != arrowPosition) {
+    _arrowPosition = arrowPosition;
+    _messageBubbleView.arrowPosition = arrowPosition;
+    [_messageBubbleView setNeedsLayout];
+    [self setNeedsLayout];
+  }
+}
+
+- (void)didTapActionButton:(id)sender {
+  if (self.actionButtonTapEventBlock) {
+    self.actionButtonTapEventBlock();
+  }
+}
+
+@end
