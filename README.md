@@ -49,6 +49,9 @@ This sample is released under the [Apache 2.0 license](LICENSE).
 ## Disclaimer
 This is not an official Google product.
 
+## Authors
+[Chang Luo][changluo] and [Bob Liu][bobliu]
+
 [getting-started]: https://cloud.google.com/vision/docs/getting-started
 [cloud-console]: https://console.cloud.google.com
 [git]: https://git-scm.com/
@@ -57,3 +60,5 @@ This is not an official Google product.
 [enable-speech]: https://console.cloud.google.com/apis/api/speech.googleapis.com/overview?project=_
 [api-key]: https://console.cloud.google.com/apis/credentials?project=_
 [cocoapods]: https://cocoapods.org/
+[changluo]: https://www.linkedin.com/in/changluo
+[bobliu]: https://www.linkedin.com/in/bobyliu
