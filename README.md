@@ -4,6 +4,7 @@ This sample demonstrates how to build an iOS chatbot with Google Cloud Vision,
 Speech, and Translate APIs and API.AI.
 
 [![English Demo](http://img.youtube.com/vi/qDAP3ZFjO48/0.jpg)](https://youtu.be/qDAP3ZFjO48)
+[![The Google Assistant / Google Home Demo](http://img.youtube.com/vi/_x5rlkpZiyc/0.jpg)](https://youtu.be/_x5rlkpZiyc)
 
 ## Prerequisites
 - An iOS API key for the Cloud APIs (See
@@ -62,3 +63,4 @@ This is not an official Google product.
 [cocoapods]: https://cocoapods.org/
 [changluo]: https://www.linkedin.com/in/changluo
 [bobliu]: https://www.linkedin.com/in/bobyliu
+[google-home]: https://www.youtube.com/watch?v=_x5rlkpZiyc&feature=youtu.be
