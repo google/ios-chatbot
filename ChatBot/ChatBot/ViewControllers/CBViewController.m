@@ -63,7 +63,7 @@
 #import "CBLandmarkDetectionService.h"
 #import "UIColor+GILAdditions.h"
 #import "UIView+GILAutolayoutAdditions.h"
-#import "google/cloud/speech/v1beta1/CloudSpeech.pbrpc.h"
+#import "google/cloud/speech/v1/CloudSpeech.pbrpc.h"
 
 typedef void (^ActionButtonTapEventBlock)(void);
 
@@ -802,7 +802,7 @@ static NSError *CustomError(NSString *message) {
         processAudioData:_audioData
           withCompletion:^(id object) {
             NSLog(@"%@", object);
-            SyncRecognizeResponse *response = object;
+            RecognizeResponse *response = object;
             if (response && response.resultsArray_Count) {
               SpeechRecognitionResult *result = response.resultsArray[0];
               if (result.alternativesArray_Count) {

@@ -1,4 +1,4 @@
-#import "google/cloud/speech/v1beta1/CloudSpeech.pbrpc.h"
+#import "google/cloud/speech/v1/CloudSpeech.pbrpc.h"
 
 #import <ProtoRPC/ProtoRPC.h>
 #import <RxLibrary/GRXWriter+Immediate.h>
@@ -7,7 +7,7 @@
 
 // Designated initializer
 - (instancetype)initWithHost:(NSString *)host {
-  return (self = [super initWithHost:host packageName:@"google.cloud.speech.v1beta1" serviceName:@"Speech"]);
+  return (self = [super initWithHost:host packageName:@"google.cloud.speech.v1" serviceName:@"Speech"]);
 }
 
 // Override superclass initializer to disallow different package and service names.
@@ -22,44 +22,46 @@
 }
 
 
-#pragma mark SyncRecognize(SyncRecognizeRequest) returns (SyncRecognizeResponse)
+#pragma mark Recognize(RecognizeRequest) returns (RecognizeResponse)
 
 /**
- * Perform synchronous speech-recognition: receive results after all audio
+ * Performs synchronous speech recognition: receive results after all audio
  * has been sent and processed.
  */
-- (void)syncRecognizeWithRequest:(SyncRecognizeRequest *)request handler:(void(^)(SyncRecognizeResponse *_Nullable response, NSError *_Nullable error))handler{
-  [[self RPCToSyncRecognizeWithRequest:request handler:handler] start];
+- (void)recognizeWithRequest:(RecognizeRequest *)request handler:(void(^)(RecognizeResponse *_Nullable response, NSError *_Nullable error))handler{
+  [[self RPCToRecognizeWithRequest:request handler:handler] start];
 }
 // Returns a not-yet-started RPC object.
 /**
- * Perform synchronous speech-recognition: receive results after all audio
+ * Performs synchronous speech recognition: receive results after all audio
  * has been sent and processed.
  */
-- (GRPCProtoCall *)RPCToSyncRecognizeWithRequest:(SyncRecognizeRequest *)request handler:(void(^)(SyncRecognizeResponse *_Nullable response, NSError *_Nullable error))handler{
-  return [self RPCToMethod:@"SyncRecognize"
+- (GRPCProtoCall *)RPCToRecognizeWithRequest:(RecognizeRequest *)request handler:(void(^)(RecognizeResponse *_Nullable response, NSError *_Nullable error))handler{
+  return [self RPCToMethod:@"Recognize"
             requestsWriter:[GRXWriter writerWithValue:request]
-             responseClass:[SyncRecognizeResponse class]
+             responseClass:[RecognizeResponse class]
         responsesWriteable:[GRXWriteable writeableWithSingleHandler:handler]];
 }
-#pragma mark AsyncRecognize(AsyncRecognizeRequest) returns (Operation)
+#pragma mark LongRunningRecognize(LongRunningRecognizeRequest) returns (Operation)
 
 /**
- * Perform asynchronous speech-recognition: receive results via the
- * google.longrunning.Operations interface. `Operation.response` returns
- * `AsyncRecognizeResponse`.
+ * Performs asynchronous speech recognition: receive results via the
+ * google.longrunning.Operations interface. Returns either an
+ * `Operation.error` or an `Operation.response` which contains
+ * a `LongRunningRecognizeResponse` message.
  */
-- (void)asyncRecognizeWithRequest:(AsyncRecognizeRequest *)request handler:(void(^)(Operation *_Nullable response, NSError *_Nullable error))handler{
-  [[self RPCToAsyncRecognizeWithRequest:request handler:handler] start];
+- (void)longRunningRecognizeWithRequest:(LongRunningRecognizeRequest *)request handler:(void(^)(Operation *_Nullable response, NSError *_Nullable error))handler{
+  [[self RPCToLongRunningRecognizeWithRequest:request handler:handler] start];
 }
 // Returns a not-yet-started RPC object.
 /**
- * Perform asynchronous speech-recognition: receive results via the
- * google.longrunning.Operations interface. `Operation.response` returns
- * `AsyncRecognizeResponse`.
+ * Performs asynchronous speech recognition: receive results via the
+ * google.longrunning.Operations interface. Returns either an
+ * `Operation.error` or an `Operation.response` which contains
+ * a `LongRunningRecognizeResponse` message.
  */
-- (GRPCProtoCall *)RPCToAsyncRecognizeWithRequest:(AsyncRecognizeRequest *)request handler:(void(^)(Operation *_Nullable response, NSError *_Nullable error))handler{
-  return [self RPCToMethod:@"AsyncRecognize"
+- (GRPCProtoCall *)RPCToLongRunningRecognizeWithRequest:(LongRunningRecognizeRequest *)request handler:(void(^)(Operation *_Nullable response, NSError *_Nullable error))handler{
+  return [self RPCToMethod:@"LongRunningRecognize"
             requestsWriter:[GRXWriter writerWithValue:request]
              responseClass:[Operation class]
         responsesWriteable:[GRXWriteable writeableWithSingleHandler:handler]];
@@ -67,7 +69,7 @@
 #pragma mark StreamingRecognize(stream StreamingRecognizeRequest) returns (stream StreamingRecognizeResponse)
 
 /**
- * Perform bidirectional streaming speech-recognition: receive results while
+ * Performs bidirectional streaming speech recognition: receive results while
  * sending audio. This method is only available via the gRPC API (not REST).
  */
 - (void)streamingRecognizeWithRequestsWriter:(GRXWriter *)requestWriter eventHandler:(void(^)(BOOL done, StreamingRecognizeResponse *_Nullable response, NSError *_Nullable error))eventHandler{
@@ -75,7 +77,7 @@
 }
 // Returns a not-yet-started RPC object.
 /**
- * Perform bidirectional streaming speech-recognition: receive results while
+ * Performs bidirectional streaming speech recognition: receive results while
  * sending audio. This method is only available via the gRPC API (not REST).
  */
 - (GRPCProtoCall *)RPCToStreamingRecognizeWithRequestsWriter:(GRXWriter *)requestWriter eventHandler:(void(^)(BOOL done, StreamingRecognizeResponse *_Nullable response, NSError *_Nullable error))eventHandler{
